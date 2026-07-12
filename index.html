@@ -258,6 +258,10 @@ src="https://www.facebook.com/tr?id=2806159373093586&ev=PageView&noscript=1"
   }
   .badge-1{ top:-18px; left:-18px; transform:rotate(-6deg); }
   .badge-2{ bottom:-16px; right:-16px; transform:rotate(4deg); }
+  @media (max-width:959px){
+    .badge-1{ top:-56px; left:50%; transform:translateX(-50%) rotate(-2deg); white-space:nowrap; }
+    .badge-2{ bottom:-14px; right:50%; transform:translateX(50%) rotate(2deg); }
+  }
 
   /* ---------- Section generic ---------- */
   section{position:relative; padding:72px 0;}
@@ -378,9 +382,13 @@ src="https://www.facebook.com/tr?id=2806159373093586&ev=PageView&noscript=1"
   .testi-person{display:flex; align-items:center; gap:12px;}
   .avatar{
     width:42px; height:42px; border-radius:50%;
-    background:var(--muted); border:2px solid var(--foreground);
-    display:flex; align-items:center; justify-content:center;
-    font-weight:700; font-family:"Outfit",sans-serif;
+    border:2px solid var(--foreground);
+    overflow:hidden;
+    flex-shrink:0;
+  }
+  .avatar img{
+    width:100%; height:100%; object-fit:cover;
+    display:block;
   }
   .testi-person .name{font-weight:700; font-size:0.9rem;}
   .testi-person .role{font-size:0.78rem; color:var(--muted-fg);}
@@ -742,32 +750,32 @@ src="https://www.facebook.com/tr?id=2806159373093586&ev=PageView&noscript=1"
         <div class="stars">★★★★★</div>
         <p>"Comecei fazendo só pra família e em duas semanas já tinha vendido pra vizinhança inteira. As receitas são muito fáceis de seguir."</p>
         <div class="testi-person">
-          <div class="avatar">CM</div>
-          <div><div class="name">Camila M.</div><div class="role">Autônoma, SP</div></div>
+          <div class="avatar"><img src="https://i.postimg.cc/P5n6W857/persona-mulher-1.png" alt="Camila M."></div>
+          <div><div class="name">Camila M.</div><div class="role">São Paulo, SP</div></div>
         </div>
       </div>
       <div class="testi-card">
         <div class="stars">★★★★★</div>
         <p>"O guia de precificação foi o que mais me ajudou. Eu tava vendendo no prejuízo sem perceber, hoje já tenho lucro de verdade."</p>
         <div class="testi-person">
-          <div class="avatar">JR</div>
-          <div><div class="name">Juliana R.</div><div class="role">Mãe empreendedora</div></div>
+          <div class="avatar"><img src="https://i.postimg.cc/bwRKdR90/persona-mulher-2.png" alt="Juliana R."></div>
+          <div><div class="name">Juliana R.</div><div class="role">Curitiba, PR</div></div>
         </div>
       </div>
       <div class="testi-card">
         <div class="stars">★★★★★</div>
         <p>"Nunca fui boa de cozinha, mas o passo a passo é tão detalhado que consegui acertar de primeira. Recomendo demais."</p>
         <div class="testi-person">
-          <div class="avatar">PS</div>
-          <div><div class="name">Patrícia S.</div><div class="role">Confeiteira iniciante</div></div>
+          <div class="avatar"><img src="https://i.postimg.cc/j2N1T6j7/persona-mulher-3.png" alt="Patrícia S."></div>
+          <div><div class="name">Patrícia S.</div><div class="role">Brasília, DF</div></div>
         </div>
       </div>
       <div class="testi-card">
         <div class="stars">★★★★★</div>
         <p>"Investi pouco e recuperei o valor já na primeira encomenda. Hoje faço mini donuts todo fim de semana e já tenho lista de espera."</p>
         <div class="testi-person">
-          <div class="avatar">AL</div>
-          <div><div class="name">Ana L.</div><div class="role">Renda extra em casa</div></div>
+          <div class="avatar"><img src="https://i.postimg.cc/NjbzQjgc/persona-mulher-4.png" alt="Ana L."></div>
+          <div><div class="name">Ana L.</div><div class="role">Varginha, MG</div></div>
         </div>
       </div>
     </div>
