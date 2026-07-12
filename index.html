@@ -235,14 +235,6 @@ src="https://www.facebook.com/tr?id=2806159373093586&ev=PageView&noscript=1"
   .hero-media-frame img{
     width:100%; height:100%; object-fit:cover;
   }
-  .play-badge{
-    position:absolute; z-index:2;
-    width:76px; height:76px; border-radius:50%;
-    background:#fff; border:2px solid var(--foreground);
-    display:flex; align-items:center; justify-content:center;
-    box-shadow:4px 4px 0 var(--foreground);
-    cursor:pointer;
-  }
   .badge-float{
     position:absolute;
     background:#fff; border:2px solid var(--foreground);
@@ -630,7 +622,6 @@ src="https://www.facebook.com/tr?id=2806159373093586&ev=PageView&noscript=1"
       <div class="badge-float badge-1">⭐⭐⭐⭐⭐(9,9) +720 alunos</div>
       <div class="hero-media-frame" id="vslFrame">
         <img src="https://i.postimg.cc/28BgYDtJ/capa-lp-mini-donuts-(1).png" alt="Renda Extra com Mini Donuts">
-        <div class="play-badge" id="playBtn">▶️</div>
       </div>
       <div class="badge-float badge-2">📦 Receitas testadas</div>
     </div>
@@ -911,11 +902,6 @@ src="https://www.facebook.com/tr?id=2806159373093586&ev=PageView&noscript=1"
         a.style.maxHeight = a.scrollHeight + 'px';
       }
     });
-  });
-
-  // Play badge placeholder (swap image for a real VSL video later)
-  document.getElementById('playBtn').addEventListener('click', ()=>{
-    alert('Aqui entra o vídeo (VSL). Basta substituir a imagem por um <video> ou embed quando estiver pronto.');
   });
 </script>
 
